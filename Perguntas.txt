@@ -1,4 +1,9 @@
 1 - O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?
+R: São operações que permitem a alteração de um repositório em termo de ficheiros existentes. 
+*Commit*: Este comando permite que alterações locais do repositório sejam registadas. É boa prática adicionar uma mensagem através do comando -m. Esta mensagem deve ser breve e descrever as alterações realizadas localmente, o que é útil no controle de versões, pois permite uma rápida identificação das alterações através do histórico de commits.
+*Push*: Este comando permite a efetivação das alterações locais registadas pelo commit. Ou seja, ficheiros criados, modificados ou deletados são replicados no repositório remoto. É possível especificar qual branch será o alvo da sincronização. Essas alterações são visíveis apenas para os utilizadores que possuem a versão atualizada do repositório, ou seja, clonando-o ou executando o comando pull.
+*Pop*: Este comando permite a restauração de alterações armazenadas no stash. O stash é utilizado para guardar temporariamente alterações realizadas no repositório, mas que não devem ser sincronizadas de imediato ao fazer um commit. Enquanto o stash desfaz temporariamente as alterações no repositório local, o pop permite que estas voltem a ter efeito localmente.
+
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em 
 que consistem e como podem ser resolvidos esses conflitos?
