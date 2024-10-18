@@ -21,3 +21,6 @@ Uma forma de resolução é abrir o ficheiro sinalizado e decidir qual o código
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as 
 diferenças entre eles?
+R: Ambos os commandos criam uma cópia local do repositório, a diferença está no propósito desta cópia.
+*Clone*: O comando git clone é utilizado quando o objetivo é contribuir diretamente com o repositório clonado. Ele cria uma cópia exata do repositório no ambiente local do utilizador, mantendo uma conexão direta com o repositório original. Isso significa que operações como pull podem trazer mudanças do repositório remoto para o local, e operações como push permitem enviar mudanças de volta ao repositório original, alterando-o diretamente (desde que o utilizador tenha permissão). Essa abordagem é ideal para colaboradores que têm acesso para fazer mudanças diretas no projeto.
+*Fork*: Utilizado com o intuito de criar uma cópia independente do repositório original. A cópia local fica isolada do original, permitindo que o utilizador faça modificações sem afetar o projeto principal. Se o utilizador quiser que suas alterações sejam aplicadas ao repositório original, ele pode enviar um pull request. Esta abordagem é comum em projetos "open source".
