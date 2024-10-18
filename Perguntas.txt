@@ -9,5 +9,15 @@ R: O uso de branches permite o desenvolvimento paralelo sem riscos de sobreposi�
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em 
 que consistem e como podem ser resolvidos esses conflitos?
+R: Conflitos em um merge ocorrem quando duas ou mais alterações são feitas no mesmo ficheiro, mais especificamente na mesma linha ou bloco de código, e o Git é incapaz de identificar qual versão deve prevalecer. Um conflito comum acontece quando um utilizador faz alterações locais, e outro utilizador altera o mesmo trecho de código no repositório remoto. Isso pode causar um conflito no momento de integrar as mudanças (merge), porque o Git não consegue decidir qual versão é a correta.
+No caso do pop, ao restaurar alterações guardadas no stash, pode haver um conflito se o código restaurado entrar em conflito com modificações feitas por outro utilizador ou se alterações locais tiverem sido feitas no mesmo trecho.
+Quando ocorre um conflito, o Git sinaliza ficheiros afetados. É demarcado no Código da seguinte forma:
+<<<<<<< HEAD
+(versão local)
+=======
+(versão nova)
+>>>>>>>
+Uma forma de resolução é abrir o ficheiro sinalizado e decidir qual o código correto a considerar, tal como remover as marcações. Uma vez que o ficheiro esteja corrigido deve ser sincronizado com o repositório remoto.
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as 
 diferenças entre eles?
