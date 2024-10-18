@@ -5,6 +5,8 @@ R: São operações que permitem a alteração de um repositório em termo de fi
 *Pop*: Este comando permite a restauração de alterações armazenadas no stash. O stash é utilizado para guardar temporariamente alterações realizadas no repositório, mas que não devem ser sincronizadas de imediato ao fazer um commit. Enquanto o stash desfaz temporariamente as alterações no repositório local, o pop permite que estas voltem a ter efeito localmente.
 
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+R: O uso de branches permite o desenvolvimento paralelo sem riscos de sobreposição de alterações. Trata-se de "ramificações" do repositório remoto. Por defeito, existe sempre um branch principal, chamado master ou main. Outras ramificações permitem o desenvolvimento e gestão de ficheiros de forma isolada. Isto é possível porque cada branch possui o seu próprio código, e sincronizações através de push afetam especificamente o branch desejado, sem alterar o main. Além disso, cada branch tem seu próprio controle de versões e histórico. Isso permite testes, identificação de bugs, e desenvolvimento de novas funcionalidades de forma paralela, sem afetar o código principal.
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em 
 que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as 
